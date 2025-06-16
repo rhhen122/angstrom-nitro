@@ -17,11 +17,6 @@ function main() {
     raw(`<ul id="list">`);
     raw(`</ul>`);
     br();
-
-    // Checker
-    input('Enter a number', 'number-input', '', '');
-    button('Submit', '', '', `onclick="checkNumber()"`);
-    raw('<p id="numOut"></p>')
 }
 function addToList() {
     let input = document.getElementById('task-input');
@@ -87,10 +82,6 @@ function input(placeholder, id, cl, ot) {
 function button(text, id, cl, ot) {
     body.innerHTML +=
     `<button id="${id}" class="${cl}" ${ot}>${text}</button>`;
-}
-function isEven(value) {
-    let superChecker = value % 2;
-    if (superChecker == 0) {return true;} else {return false;}
 }
 function hr() {body.innerHTML += "<hr>";}
 function br() {body.innerHTML += "<br>";}
