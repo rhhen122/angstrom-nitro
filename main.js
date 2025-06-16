@@ -92,6 +92,14 @@ function button(text, id, cl, ot) {
     body.innerHTML +=
     `<button id="${id}" class="${cl}" ${ot}>${text}</button>`;
 }
+function p(text, id, cl, ot) {
+    body.innerHTML +=
+    `<p id="${id}" class="${cl}" ${ot}>${text}</p>`;
+}
+function a(text, href, id, cl, ot) {
+    body.innerHTML +=
+    `<a href="${href}" id="${id}" class="${cl}" ${ot}>${text}</a> `
+}
 function hr() {body.innerHTML += "<hr>";}
 function br() {body.innerHTML += "<br>";}
 function breaker() {br();}
