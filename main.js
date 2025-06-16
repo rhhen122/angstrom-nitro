@@ -2,6 +2,10 @@
 function main() {
     // this is the code that will be rendered
     style("style.css");
+    favicon("https://angstrom.rhhen.xyz/logo.svg");
+    title("Angstrom Nitro");
+    metadata("This is Angstrom Nitro a JS Web framework that has beautiful syntax!");
+    
     header("This is Angstrom Nitro!", "", "", "", "1");
     text(`This is a demo site for Nitro!
          Developed by Roky Henderson its an <u>Open Source</u>
@@ -22,13 +26,6 @@ function addToList() {
     let input = document.getElementById('task-input');
     document.getElementById('list').innerHTML +=
     "<li>"+input.value+"</li>";
-}
-function checkNumber() {
-    let input = document.getElementById('number-input');
-    let num = +input;
-    let out = isEven(num);
-    console.log(out);
-    if (out == true) {document.getElementById('numOut').innerHTML = 'Its Even!'} else {document.getElementById('numOut').innerHTML = 'Its Odd!';}
 }
 
 
@@ -62,6 +59,18 @@ function text(text) {
 function style(location) {
     head.innerHTML +=
     `<link rel="stylesheet" href=`+location+`>`;
+}
+function favicon(location) {
+    head.innerHTML +=
+    `<link rel="icon" type="image/x-icon" href="${location}">`;
+}
+function title(text) {
+    head.innerHTML +=
+    `<title>${text}</title>`;
+}
+function metadata(text) {
+    head.innerHTML +=
+    `<meta name="description" content="${text}">`;
 }
 function image(src, height, length, ot) {
     body.innerHTML +=
