@@ -15,13 +15,25 @@ function main() {
     input("Enter a task", "task-input", "", "");
     button("Submit", "", "", `onclick="addToList()"`);
     raw(`<ul id="list">`);
-    raw(`</ul>`)
+    raw(`</ul>`);
     br();
+
+    // Checker
+    input('Enter a number', 'number-input', '', '');
+    button('Submit', '', '', `onclick="checkNumber()"`);
+    raw('<p id="numOut"></p>')
 }
 function addToList() {
     let input = document.getElementById('task-input');
     document.getElementById('list').innerHTML +=
     "<li>"+input.value+"</li>";
+}
+function checkNumber() {
+    let input = document.getElementById('number-input');
+    let num = +input;
+    let out = isEven(num);
+    console.log(out);
+    if (out == true) {document.getElementById('numOut').innerHTML = 'Its Even!'} else {document.getElementById('numOut').innerHTML = 'Its Odd!';}
 }
 
 
@@ -60,11 +72,11 @@ function image(src, height, length, ot) {
     body.innerHTML +=
     "<img "+'src="'+src+'" height="'+height+'" length="'+length+'" '+ot+" >";
 }
-function bulletpointopen() {
+function ulist(id, cl) {
     body.innerHTML +=
-    "<ul>";
+    `<ul id="${id}" class="${cl}">`;
 }
-function bulletpointclose() {
+function ulistclose() {
     body.innerHTML +=
     "</ul>";
 }
@@ -75,6 +87,10 @@ function input(placeholder, id, cl, ot) {
 function button(text, id, cl, ot) {
     body.innerHTML +=
     `<button id="${id}" class="${cl}" ${ot}>${text}</button>`;
+}
+function isEven(value) {
+    let superChecker = value % 2;
+    if (superChecker == 0) {return true;} else {return false;}
 }
 function hr() {body.innerHTML += "<hr>";}
 function br() {body.innerHTML += "<br>";}
