@@ -18,6 +18,13 @@ function main() {
     "",
     "",
   );
+  // The badges
+  image(
+    "https://badgen.net/static/Open/Source/green?icon=https://upload.wikimedia.org/wikipedia/commons/archive/e/eb/20070822051640%21Open_Source_Initiative.svg",
+    "",
+    "",
+    "style='display: block; margin: auto;'",
+  );
   p('<a href="/demos/">Demos</a>', "desc", "", "");
 
   hr();
