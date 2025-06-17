@@ -1,31 +1,45 @@
 // This is your domain.
 function main() {
     // this is the code that will be rendered
-    style("style.css");
-    favicon("https://angstrom.rhhen.xyz/logo.svg");
-    title("Angstrom Nitro");
-    metadata("This is Angstrom Nitro a JS Web framework that has beautiful syntax!");
-    
-    header("This is Angstrom Nitro!", "", "", "", "1");
-    text(`This is a demo site for Nitro!
-         Developed by Roky Henderson its an <u>Open Source</u>
-          JS framework that provides easy usage!`);
-    image("https://angstrom.rhhen.xyz/logo.svg", "", "", `align="left"`);
-    text("This is angstrom a project to normalize odd web things! Like this webpage! Its ugly But a perfectly functioning demo!");
 
-    // The project
+    let desc = 'Angstrom the powerful web framework';
+    let name = 'Angstrom Nitro'
+
+    metadata(desc);
+    title(name);
+    favicon('https://angstrom.rhhen.xyz/logo.svg');
+    style('style.css')
+
+    header(name, '', '', '', '1');
+    p(desc, 'desc', '', '');
+    p('Made with <img src="https://www.svgrepo.com/show/427466/general-heart-heart-beat-2.svg" height="20px"> by Roky Henderson', 'desc', '', '');
+
+    hr();
+
+    text('Angstrom is a love project that I made because I needed to deploy stable and <i>fast</i> websites in minutes. Angstrom <b>Nitro</b> is a godforbidding JS framework that makes some dev shudder. You can deploy a website in minutes with Angstrom but Nitro might make you take a whole month reading the source code. This is a shambles of a project - and by that I mean hard to learn. While other WebDev frameworks use things like <i>databases</i> or any of those other fancy things Nitro is JUST Javascript that is quickly* rendered on the web-browser. <artical class="note">*depends on the browser really</artical> Sure silly things exsist like "non repeatitive code" but who gives a sh*t? Most of this codebase is made from random copy and pasted Stack Overflow code. The thing is that it works and if it doesnt then dont use it. If its to slow then dont use it. Most "programmers" will say that they want a Rust based WebDev Framework, no the f*ck you dont. Javascript was <u>designed</u> for WebDev we shouldnt take that away. There is a reason that there are so many Javascript WebDev frameworks that power the web.');
+
     br();
-    text("An example project:");
-    input("Enter a task", "task-input", "", "");
-    button("Submit", "", "", `onclick="addToList()"`);
-    raw(`<ul id="list">`);
-    raw(`</ul>`);
+
+    image('https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png', '400px', '', 'align="right"');
+    text('This is Angstrom Nitro a project that makes webdev consist of only JS and CSS. The initial version was made in only 2 days (v1.0). Its written in VSCode and is Open Source.');
+    text('The source code wasnt published until I was sure that everything would seemlessly intergrate with github and anything else I needed it to. I also needed it to be more of sequel to the OG Angstrom which took me a week.');
+    text('There were many different ideas for Nitro, it took me a whole week to decide how <i>I</i> wanted to have it work. If anything Nitro is for me to build websites with. I <b>hate</b> PHP and other languages like that as they were inconsistent and hard to learn.');
+    text('I already know how much hate im going to get and the fact is, I know this is a peice of shit. Really all that Nitro is, is a bunch of functions that insert new lines of HTML into the index.html file.');
+    text('There are many functions that I am currently making. To use it all you have todo to use it is to use any of the functions in inside the "function main() {functions here}"');
+
     br();
-}
-function addToList() {
-    let input = document.getElementById('task-input');
-    document.getElementById('list').innerHTML +=
-    "<li>"+input.value+"</li>";
+
+    image('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/416px-Markdown-mark.svg.png', '250', '', 'align="left"');
+    text('Markdown is beautiful but I didnt use it. There is one MAJOR problem with Markdown that most other WebDev tools try to fix. Variables. This is one thing Javascript <artical class="note">and other scripting languages</artical> dangle over the head of Markdown and HTML, being able to set a variable in one place and then change it in multiple is nessacary when you start getting serious about WebDev. As well as that Markdown has a whole lot of other problems that no-one wants to solve. Such as:');
+    ulist();
+    raw('<li>No functions</li>');
+    raw('<li>No logic</li>');
+    raw('<li>No conditional statements</li>');
+    ulistclose();
+
+    br();
+
+    raw('<artical id="nav"><a href="/main.js">The Script for this site</a> | <a href="/style.css">Stylesheet for this site</a></artical>');
 }
 
 
