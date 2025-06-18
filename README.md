@@ -1,17 +1,20 @@
-Angstrom Nitro  https://rhhen122.github.io/angstrom-nitro/
+# Angstrom Nitro
+
+<a href='https://rhhen122.githib.io/angstrom-nitro/'>https://rhhen122.github.io/angstrom-nitro/</a>
 
 This is Nitro! Imagine rendering a Webpage with JS! Yeah you probably hate it already...
 "WTF WHY DID YOU MAKE THIS!?" Because I wanted to use logic and dynamic stuff without having to constantly link JS and HTML.
 
-Tools
+## Tools
 Tools allow the dev to test and show off their crappy little websites
 
 'It was only about a day before git started tracking its self' - Linus Torvalds
 'It was only about a day before nitro start ruining its self' - Me
 
-Notes
+## Notes
 Docs contains an example of how a Nitro site "should be"
 
-Using this SOB
-
+## Using this SOB
+```
 $ curl -o http://link.to.main.file/
+```
