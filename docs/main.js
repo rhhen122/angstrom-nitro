@@ -29,7 +29,7 @@ function main() {
 
   hr();
 
-  image("./angstrom-nitro-logo-white/96.png", "200", "200", 'align="left"');
+  image("./angstrom-nitro-logo-white/96.png", "220", "220", 'align="left"');
   text(
     'Angstrom is a love project that I made because I needed to deploy stable and <i>fast</i> websites in minutes. Angstrom <b>Nitro</b> is a godforbidding JS framework that makes some dev shudder. You can deploy a website in minutes with Angstrom but Nitro might make you take a whole month reading the source code. This is a shambles of a project - and by that I mean hard to learn. While other WebDev frameworks use things like <i>databases</i> or any of those other fancy things Nitro is JUST Javascript that is quickly* rendered on the web-browser. <artical class="note">*depends on the browser really</artical> Sure silly things exsist like "non repeatitive code" but who gives a sh*t? Most of this codebase is made from random copy and pasted Stack Overflow code. The thing is that it works and if it doesnt then dont use it. If its to slow then dont use it. Most "programmers" will say that they want a Rust based WebDev Framework, no the f*ck you dont. Javascript was <u>designed</u> for WebDev we shouldnt take that away. There is a reason that there are so many Javascript WebDev frameworks that power the web.',
   );
