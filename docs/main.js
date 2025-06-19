@@ -78,7 +78,7 @@ function main() {
   br();
 
   raw(
-    '<artical id="nav"><a href="/main.js">The Script for this site</a> | <a href="/style.css">Stylesheet for this site</a></artical>',
+    '<artical id="nav"><a href="/main.js">The Script for this site</a> | <a href="/style.css">Stylesheet for this site</a> | <a href="https://github.com/rhhen122/angstrom-nitro">Github</a> | <a href="https://github.com/rhhen122/angstrom-nitro/tree/master/src">src/</a></artical>',
   );
 }
 
