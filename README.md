@@ -8,6 +8,10 @@ This is Nitro! Imagine rendering a Webpage with JS! Yeah you probably hate it al
 ## Tools
 Tools allow the dev to test and show off their crappy little websites
 
+### List of Tools
+ - View (Brings up a preview of your website at <a href='http://localhost:8888/'>localhost:8888</a>)
+ - Ship (Ships your files into a 'app' folder)
+
 'It was only about a day before git started tracking its self' - Linus Torvalds
 'It was only about a day before nitro start ruining its self' - Me
 
