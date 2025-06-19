@@ -18,6 +18,8 @@ Tools allow the dev to test and show off their crappy little websites
 ## Notes
 Docs contains an example of how a Nitro site "should be"
 
+<a href='https://github.com/rhhen122/angstrom-nitro/tags'>Stable Tags/Releases Here.</a>
+
 ## Using this SOB
 ```
 $ curl -o http://link.to.main.file/
