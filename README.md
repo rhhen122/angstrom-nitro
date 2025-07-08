@@ -23,6 +23,7 @@ Docs contains an example of how a Nitro site "should be"
 <a href='https://github.com/rhhen122/angstrom-nitro/tags'>Stable Tags/Releases Here.</a>
 
 ## Using this SOB
+Copy from the /src/ dir in the git repo whatever you need! FYI: main.js and index.html need each other to work!
 ```
 $ curl -o http://link.to.main.file/
 ```
