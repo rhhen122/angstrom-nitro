@@ -1,5 +1,9 @@
 # Angstrom Nitro
 
+<!--
+COPYRIGHT to all nitro src code: Roky Edward Iven Henderson / Rhhen122 ));
+-->
+
 <a href='https://rhhen122.githib.io/angstrom-nitro/'>https://rhhen122.github.io/angstrom-nitro/</a>
 
 This is Nitro! Imagine rendering a Webpage with JS! Yeah you probably hate it already...
